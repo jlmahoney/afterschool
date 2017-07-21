@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script type="text/javascript" src="./How to make a circular image with CSS only (Example)_files/89b8075f9d"></script><script src="./How to make a circular image with CSS only (Example)_files/nr-1044.min.js"></script><script type="text/javascript" async="" src="./How to make a circular image with CSS only (Example)_files/50775e2d30a1d50002000221.js"></script><script async="" src="./How to make a circular image with CSS only (Example)_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"89b8075f9d","applicationID":"31563158","transactionName":"JVlfRkRcW1hRRR9HRAlCWEJFHERcW0A=","queueTime":2,"applicationTime":61,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<meta property="current_user:id">
+
+<title>How to make a circular image with CSS only (Example)</title>
+<meta name="description" content="A protip by kamilwysocki about css, css3, images, html5, html, round, circle, circular, and rounded.">
+<meta name="keywords" content="css, css3, images, html5, html, round, circle, circular, rounded">
+<link rel="canonical" href="https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only">
+<link rel="author" href="https://coderwall.com/kamilwysocki">
+<meta property="og:title" content="How to make a circular image with CSS only (Example)">
+<meta property="og:url" content="https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only">
+<meta property="og:site_name" content="Coderwall">
+<meta property="og:description" content="A protip by kamilwysocki about css, css3, images, html5, html, round, circle, circular, and rounded.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://coderwall-assets-0.s3.amazonaws.com/uploads/user/avatar/79608/coderwall.jpg">
+<meta name="twitter:title" content="How to make a circular image with CSS only (Example)">
+<meta name="twitter:url" content="https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only">
+<meta name="twitter:site_name" content="Coderwall">
+<meta name="twitter:site" content="@coderwall">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:creator:id" content="120452169">
+<meta name="twitter:image" content="https://coderwall-assets-0.s3.amazonaws.com/uploads/user/avatar/79608/coderwall.jpg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" media="all" href="./How to make a circular image with CSS only (Example)_files/application_static-8cd0567f17b372fd07cb9de3659f01a06b0ac69ab55f9c66d395f0b8ebfe2180.css" data-turbolinks-track="reload">
+
+<script src="./How to make a circular image with CSS only (Example)_files/application_static-df7a040d64fc527786b488987b70e4696685067d41998c7e0acda504beb4e768.js" data-turbolinks-track="reload"></script><script type="text/javascript" async="" src="./How to make a circular image with CSS only (Example)_files/bsa.js"></script>
+<script src="./How to make a circular image with CSS only (Example)_files/pEaCoeG7.js"></script>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="e2iiiMyiILAm0pPketASaHbivrJlpuae+RSwx+bjHqfRpbEErxmEnT68jYzq5AuhiGgSL9Y1vlR+tzSQOtDEBQ==">
+<!-- https://developers.google.com/analytics/devguides/collection/analyticsjs/sending-hits -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-797907-8', 'auto');
+  </script>
+
+
+<link rel="stylesheet" type="text/css" href="./How to make a circular image with CSS only (Example)_files/prettify.css"><script type="text/javascript" id="_bsap_js_74f50e679004d8f4d62fec4b0f74ccf1" src="./How to make a circular image with CSS only (Example)_files/s_74f50e679004d8f4d62fec4b0f74ccf1.js" async="async"></script><script type="text/javascript" src="./How to make a circular image with CSS only (Example)_files/pro.js" id="_bsap_premium_pro"></script><script type="text/javascript" id="_bsaPRO_js" src="./How to make a circular image with CSS only (Example)_files/saved_resource" async="async"></script><script type="text/javascript" async="" src="./How to make a circular image with CSS only (Example)_files/tagjs"></script><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(1)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(2)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(3)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(4)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(5)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(6)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(7)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(8)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/saved_resource(9)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/seg" width="1" height="1" border="0"><img src="https://secure.adnxs.com/seg?t=2&amp;add=5419155" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/seg(1)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/seg(2)" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/seg(3)" width="1" height="1" border="0"><img src="https://secure.adnxs.com/seg?t=2&amp;add=5419153" width="1" height="1" border="0"><img src="https://secure.adnxs.com/seg?t=2&amp;add=1798694" width="1" height="1" border="0"><img src="./How to make a circular image with CSS only (Example)_files/seg(4)" width="1" height="1" border="0"></head>
+<body>
+<div class="clearfix">
+<header class="border-bottom">
+<nav class="clearfix py2">
+<div class="col col-4 sm-col-3 md-col-2">
+<div class="sm-ml1">
+<a class="btn logo relative" href="https://coderwall.com/">
+<div class="absolute" style="top: 2px">
+<svg version="1.1" viewBox="0 0 20 20" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="5" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="10" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="5" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="10" cy="10" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="10" r="1.4142" fill="#A26FF9"></circle>
+  <circle cx="15" cy="15" r="1.4142" fill="#A26FF9"></circle>
+</svg>
+
+</div>
+<div class="left font-x-lg" style="padding-left: 35px;">
+Coderwall
+</div>
+</a>
+</div>
+</div>
+<div class="col col-3 sm-col-6 md-col-8 h6">
+<a class="btn muted-until-hover xs-hide sm-mr1" href="https://coderwall.com/t/ruby/popular">Ruby</a>
+<a class="btn muted-until-hover xs-hide" href="https://coderwall.com/t/python/popular">Python</a>
+<a class="btn muted-until-hover xs-hide" href="https://coderwall.com/t/javascript/popular">JavaScript</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/web/popular">Front-End</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/tools/popular">Tools</a>
+<a class="btn muted-until-hover xs-hide sm-only-hide" href="https://coderwall.com/t/ios/popular">iOS</a>
+<div class="btn dropdown" style="margin-top: -3px;">
+<span class="h3 muted-until-hover">
+<i class="fa fa-sort-down relative xs-hide" style="top: -2px; margin-right: 2px;"></i>
+</span>
+<span class="muted-until-hover xs-ml3">
+<span class="xs-hide">More</span>
+Tips
+</span>
+<div class="dropdown-content bg-white mt1 py1 border z4" style="left:0">
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/ruby/popular">Ruby</a>
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/python/popular">Python</a>
+<a class="btn py1 muted-until-hover sm-hide" href="https://coderwall.com/t/javascript/popular">JavaScript</a>
+<a class="btn py1 muted-until-hover md-hide nowrap" href="https://coderwall.com/t/web/popular">Front-End</a>
+<a class="btn py1 muted-until-hover md-hide" href="https://coderwall.com/t/tools/popular">Tools</a>
+<a class="btn py1 muted-until-hover md-hide" href="https://coderwall.com/t/ios/popular">iOS</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/php/popular">PHP</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/android/popular">Android</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/dot-net/popular">.NET</a>
+<a class="btn py1 muted-until-hover" href="https://coderwall.com/t/java/popular">Java</a>
+<a class="btn py1 muted-until-hover green md-hide" href="https://coderwall.com/jobs">Jobs</a>
+</div>
+</div>
+<a class="btn border-left xs-hide sm-only-hide" href="https://coderwall.com/jobs">
+<div class="green">Jobs</div>
+</a>
+</div>
+<div class="col col-5 sm-col-3 md-col-2">
+<div class="right pr2">
+<a class="btn btn-primary bg-purple white ml1" href="https://coderwall.com/signin">Sign In or Up</a>
+</div>
+</div>
+</nav>
+</header>
+
+
+<div class="mt1 px3">
+
+</div>
+<main>
+<div class="py2 px3"><div class="container protip" id="protip_94577" itemid="how-to-make-a-circular-image-with-css-only" itemscope="">
+<div class="hide"><time datetime="2017-01-21T22:33:37Z" itemprop="dateModified">January 21, 2017 22:33</time></div>
+<div class="hide" itemprop="name">z87nsq</div>
+<div class="clearfix">
+<div class="sm-col sm-col sm-col-12 md-col-8">
+<div class="clearfix mt0 mb1">
+<div class="sm-right">
+<div class="diminish inline mr1">Last Updated: January 21, 2017</div>
+<span class="xs-hide">
+·
+<div class="diminish inline mx1">
+<i class="fa fa-eye"></i>
+96.81K
+</div>
+</span>
+·
+<span class="mx1"><a href="https://coderwall.com/kamilwysocki">kamilwysocki</a></span>
+<div class="avatar" itemprop="image" style="background-color: #6c4d24;"><img src="./How to make a circular image with CSS only (Example)_files/coderwall.jpg" alt="Coderwall"></div>
+</div>
+</div>
+<div class="card p1" style="border-top:solid 5px #6c4d24">
+<h1 class="mt4 mb2 center" itemprop="headline">How to make a circular image with CSS only</h1>
+<div class="center mr1" itemprop="keywords">
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/css/popular">css</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/css3/popular">css3</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/images/popular">images</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/html5/popular">html5</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/html/popular">html</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/round/popular">round</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/circle/popular">circle</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/circular/popular">circular</a></h6>
+<h6 class="diminish inline px1"><a href="https://coderwall.com/t/rounded/popular">rounded</a></h6>
+</div>
+<div class="content p3 mt4" itemprop="articleBody">
+<p>Ever wondered how to make those fancy circular images without the need to edit them in Photoshop? If you don't know what I'm talking about, see <a href="http://www.scenewave.com/" rel="nofollow">Scenewave</a>. This is actually fairly simple. For the sake of this example, let's use Coca-Cola logo <a href="http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg" rel="nofollow">from here</a>.</p>
+
+<h1>Basic code</h1>
+
+<p>Let's start with basic HTML and CSS for this (I'm assuming you can set up a blank HTML document and link a stylesheet to it).</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"img-circular"</span><span class="tag">&gt;&lt;/div&gt;</span></code></pre>
+
+<p>Let's set up a basic style for the class <strong>img-circular</strong>.</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="pun">.</span><span class="pln">img</span><span class="pun">-</span><span class="pln">circular</span><span class="pun">{</span><span class="pln">
+ width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+ height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+ background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg'</span><span class="pun">);</span><span class="pln">
+ background</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> cover</span><span class="pun">;</span><span class="pln">
+ display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>The only thing, that you might not be familiar with, is the line 5. The <strong>background-size</strong> is a new CSS3 property, which enables to manipulate with the dimensions of the background. You can set it's width and height by entering exact pixel values, percentage, or make the background cover or make it fit whole container. Make sure you see the <a href="http://www.w3schools.com/cssref/css3_pr_background-size.asp" rel="nofollow">background-size documentation</a> for more info.</p>
+
+<h1>Making things rounded</h1>
+
+<p>So now we have image, that fits our square container. Let's alter the CSS code to make circular frame. We will use <a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" rel="nofollow"><strong>border-radius</strong> property</a>, which gives us opportunity to round the corners of element it's applied to. To make our image circular we have to use values, which are half of the image size values. Our CSS file now looks like this:</p>
+
+<pre><code class="prettyprint lang-css prettyprinted"><span class="pun">.</span><span class="pln">img</span><span class="pun">-</span><span class="pln">circular</span><span class="pun">{</span><span class="pln">
+ width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+ height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+ background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg'</span><span class="pun">);</span><span class="pln">
+ background</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> cover</span><span class="pun">;</span><span class="pln">
+ display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln">
+ border</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">border</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">border</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>And you're done! New CSS properties allow us to create effects which can save you precious minutes of Photoshopping.</p>
+
+<h1>Further extensions</h1>
+
+<p>If you carefully studied links to documentation I gave you (in case you missed it - <a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp" rel="nofollow">check it out</a>), you are perfectly aware, that you can manipulate the image's corners in non-symmetrical way. Try CSS code below. What happened?</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="pun">.</span><span class="pln">img</span><span class="pun">-</span><span class="pln">circular</span><span class="pun">{</span><span class="pln">
+ width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+ height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200px</span><span class="pun">;</span><span class="pln">
+ background</span><span class="pun">-</span><span class="pln">image</span><span class="pun">:</span><span class="pln"> url</span><span class="pun">(</span><span class="str">'http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg'</span><span class="pun">);</span><span class="pln">
+ background</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> cover</span><span class="pun">;</span><span class="pln">
+ display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span><span class="pln">
+ border</span><span class="pun">-</span><span class="pln">top</span><span class="pun">-</span><span class="pln">left</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">border</span><span class="pun">-</span><span class="pln">top</span><span class="pun">-</span><span class="pln">left</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">border</span><span class="pun">-</span><span class="pln">top</span><span class="pun">-</span><span class="pln">left</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ border</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">-</span><span class="pln">right</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ </span><span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">border</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">-</span><span class="pln">right</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+ </span><span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">border</span><span class="pun">-</span><span class="pln">bottom</span><span class="pun">-</span><span class="pln">right</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100px</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+<p>To see the effects of this tutorial visit <a href="http://jsfiddle.net/WEYEp/" rel="nofollow">this jsFiddle page</a>.</p>
+</div>
+<div class="clearfix mt1 mb3 mx2 py2">
+<div class="clearfix border-bottom" itemprop="author">
+<h4>
+Written by
+<a class="bold user" href="https://coderwall.com/kamilwysocki" id="user_79608" itemid="79608" itemscope="" itemtype="http://schema.org/Person">
+<span class="blue" itemprop="name">Kamil W</span>
+</a>
+</h4>
+</div>
+<div class="clearfix mt1">
+<div class="btn btn-small pl0 mr1 mb1 xs-block">
+<script type="application/json" id="js-react-on-rails-context">{"inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","href":"https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only","location":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","scheme":"https","host":"coderwall.com","port":null,"pathname":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","search":null,"httpAcceptLanguage":"cs-CZ,cs;q=0.8","pusherKey":"56c8c9e2d013d4e9f315","user":null,"serverSide":false}</script>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-fb7c7aaf-6153-4634-8b98-43aad9a35b64">{"heartableId":"protip_94577","href":"/p/z87nsq/likes","labels":["Recommend","Recommended"]}</script>
+    <div id="HeartButton-react-component-fb7c7aaf-6153-4634-8b98-43aad9a35b64"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1">Recommend</span></div></div>
+    
+
+</div>
+<a class="btn btn-small pl0 mb1 mr1 xs-block" href="http://twitter.com/home?status=How+to+make+a+circular+image+with+CSS+only+by+%40kamilwysocki%0A%0Ahttps%3A%2F%2Fcoderwall.com%2Fp%2Fz87nsq" target="twitter">
+<span class="fixed-space-4"><i class="fa fa-twitter aqua h4"></i></span>
+<span>Say Thanks</span>
+</a>
+<div class="btn btn-small pl0 mb1 mr1 xs-block">
+<script type="application/json" class="js-react-on-rails-component" data-component-name="ProtipSubscribeButton" data-dom-id="ProtipSubscribeButton-react-component-5dacf4c4-ee15-428e-9084-fa4e818c0d6b">{}</script>
+    <div id="ProtipSubscribeButton-react-component-5dacf4c4-ee15-428e-9084-fa4e818c0d6b"><div data-reactroot="" class="inline pointer"><span class="fixed-space-4"><i class="fa fa-bell-slash-o"></i></span><!-- react-text: 4 -->Update Notifications Off<!-- /react-text --></div></div>
+    
+
+</div>
+<a class="btn btn-small pl0 mb1 mr1 xs-block" href="https://coderwall.com/signup">
+<span class="fixed-space-4"><i class="fa fa-comment-o black h4"></i></span>
+Respond
+</a>
+</div>
+</div>
+<div class="clearfix">
+<div class="clearfix mt3 px2">
+<h4>
+10 Responses
+<div class="right hide">
+<div class="btn btn-small green">Add your response</div>
+</div>
+</h4>
+<div class="border-top comment inline-block mb1 py1" id="comment_11261" itemid="11261" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2013-11-29T18:31:13Z" itemprop="datePublished">November 29, 2013 18:31</time></div>
+<div class="hide" itemprop="name">11261</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #a51903;">
+<img src="./How to make a circular image with CSS only (Example)_files/24995c2c67dda1af5851ba3f39f2c243.jpeg" alt="24995c2c67dda1af5851ba3f39f2c243">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/hasit" itemprop="alternateName">
+hasit
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Thanks a lot. This helped me.</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" id="js-react-on-rails-context">{"inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","href":"https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only","location":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","scheme":"https","host":"coderwall.com","port":null,"pathname":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","search":null,"httpAcceptLanguage":null,"pusherKey":"56c8c9e2d013d4e9f315","user":null,"serverSide":false}</script>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-725862e6-e6dc-4405-b28d-3a4d8ffdf7f0">{"heartableId":"comment_11261","href":"/comments/11261/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-725862e6-e6dc-4405-b28d-3a4d8ffdf7f0"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12442" itemid="12442" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-02-02T19:10:25Z" itemprop="datePublished">February 02, 2014 19:10</time></div>
+<div class="hide" itemprop="name">12442</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #46f019;">
+<img src="./How to make a circular image with CSS only (Example)_files/adaf0fcb7600a493ec8235f2160a1fc7.jpeg" alt="Adaf0fcb7600a493ec8235f2160a1fc7">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/ashutosh" itemprop="alternateName">
+ashutosh
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Thanks! By the way, is there any way to position the image so that it stays in center? Sorry for the silly question but I am still at the learning stage!</p>
+
+<p>Edit: I think I got it. Changing <code class="prettyprint prettyprinted"><span class="pln">display</span><span class="pun">:</span><span class="pln"> block</span><span class="pun">;</span></code> to <code class="prettyprint prettyprinted"><span class="pln">display</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">inline</span><span class="pun">-</span><span class="pln">block</span><span class="pun">;</span></code> does the job!</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-64ea4e5f-b7b8-42cb-9725-df0adbda6a9a">{"heartableId":"comment_12442","href":"/comments/12442/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-64ea4e5f-b7b8-42cb-9725-df0adbda6a9a"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12445" itemid="12445" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-02-02T21:17:06Z" itemprop="datePublished">February 02, 2014 21:17</time></div>
+<div class="hide" itemprop="name">12445</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #6c4d24;">
+<img src="./How to make a circular image with CSS only (Example)_files/coderwall.jpg" alt="Coderwall">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/kamilwysocki" itemprop="alternateName">
+kamilwysocki
+</a>
+</div>
+<div class="content small" itemprop="text"><p><a href="https://coderwall.com/ashutosh">@ashutosh</a> try adding <strong>background-position: center;</strong> to <strong>.img-circular</strong> class :)</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-1150cbf3-1174-438c-916a-a9c2ffe45e41">{"heartableId":"comment_12445","href":"/comments/12445/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-1150cbf3-1174-438c-916a-a9c2ffe45e41"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12455" itemid="12455" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-02-03T07:03:55Z" itemprop="datePublished">February 03, 2014 07:03</time></div>
+<div class="hide" itemprop="name">12455</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #46f019;">
+<img src="./How to make a circular image with CSS only (Example)_files/adaf0fcb7600a493ec8235f2160a1fc7.jpeg" alt="Adaf0fcb7600a493ec8235f2160a1fc7">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/ashutosh" itemprop="alternateName">
+ashutosh
+</a>
+</div>
+<div class="content small" itemprop="text"><p><a href="https://coderwall.com/kamilwysocki">@kamilwysocki</a> I tried adding that but it doesn't change anything. </p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-f0352ab1-914c-41fa-9f4c-470c05f382a0">{"heartableId":"comment_12455","href":"/comments/12455/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-f0352ab1-914c-41fa-9f4c-470c05f382a0"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12612" itemid="12612" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-02-07T18:55:57Z" itemprop="datePublished">February 07, 2014 18:55</time></div>
+<div class="hide" itemprop="name">12612</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #36ebbc;">
+<img src="./How to make a circular image with CSS only (Example)_files/41edc3c2d3bedb25f0391469a80a0717_normal.jpeg" alt="41edc3c2d3bedb25f0391469a80a0717 normal">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/sourav" itemprop="alternateName">
+sourav
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Thank you for this awesome tutorial. Could you please tell me how could I center-align this image?</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-7b03dd8c-83b2-43de-8f69-ffb6c7c1dd4b">{"heartableId":"comment_12612","href":"/comments/12612/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-7b03dd8c-83b2-43de-8f69-ffb6c7c1dd4b"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12630" itemid="12630" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-02-08T18:52:08Z" itemprop="datePublished">February 08, 2014 18:52</time></div>
+<div class="hide" itemprop="name">12630</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #6c4d24;">
+<img src="./How to make a circular image with CSS only (Example)_files/coderwall.jpg" alt="Coderwall">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/kamilwysocki" itemprop="alternateName">
+kamilwysocki
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Hey <a href="https://coderwall.com/sourav">@sourav</a>! Thank you. To center-align image add:<br>
+<strong>background-position: center;</strong> to <strong>.img-circular</strong> class.<br>
+See the fiddle here:<br>
+<a href="http://jsfiddle.net/ngzHh/" rel="nofollow">http://jsfiddle.net/ngzHh/</a></p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-f7437420-af1b-47c4-8865-daa2d4de7e28">{"heartableId":"comment_12630","href":"/comments/12630/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-f7437420-af1b-47c4-8865-daa2d4de7e28"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_12673" itemid="12673" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-02-10T21:56:41Z" itemprop="datePublished">February 10, 2014 21:56</time></div>
+<div class="hide" itemprop="name">12673</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #f6c5ea;">
+<img src="./How to make a circular image with CSS only (Example)_files/classy_big.png" alt="Classy big">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/mikezarandona" itemprop="alternateName">
+mikezarandona
+</a>
+</div>
+<div class="content small" itemprop="text"><p>One might want to get in the habit of writing &lt;strong&gt;border-radius: 50%;&lt;/strong&gt;, to make a circular element at any size (and without any math).</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" id="js-react-on-rails-context">{"inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","href":"https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only","location":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","scheme":"https","host":"coderwall.com","port":null,"pathname":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","search":null,"httpAcceptLanguage":"en-US,en;q=0.8,es-419;q=0.6,es;q=0.4,pt;q=0.2,gl;q=0.2","pusherKey":"56c8c9e2d013d4e9f315","user":null,"serverSide":false}</script>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-18c4c21e-2010-42fe-abcf-fbc3fcb232dd">{"heartableId":"comment_12673","href":"/comments/12673/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-18c4c21e-2010-42fe-abcf-fbc3fcb232dd"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_16473" itemid="16473" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-09-03T20:46:28Z" itemprop="datePublished">September 03, 2014 20:46</time></div>
+<div class="hide" itemprop="name">16473</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #2bedb9;">
+<img src="./How to make a circular image with CSS only (Example)_files/wGFSPN0O_normal.png" alt="Wgfspn0o normal">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/davidsteenkamp" itemprop="alternateName">
+davidsteenkamp
+</a>
+</div>
+<div class="content small" itemprop="text"><p>An even easier way to do this ... &lt;b&gt;if&lt;/b&gt; you are just putting an image in the old fashioned way.. such as:</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"image.jpg"</span><span class="tag">&gt;&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"img_sm.jpg"</span><span class="pln"> </span><span class="tag">/&gt;&lt;/a&gt;</span></code></pre>
+
+<p>just add a new class to the img like so:</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"image.jpg"</span><span class="tag">&gt;&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"img_sm.jpg"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"rounded"</span><span class="pln"> </span><span class="tag">/&gt;&lt;/a&gt;</span></code></pre>
+
+<p>then add this extremely simple css (thx mikezarandona above for the percentage idea):</p>
+
+<pre><code class="prettyprint prettyprinted"><span class="pln">img</span><span class="pun">.</span><span class="pln">rounded </span><span class="pun">{</span><span class="pln"> border</span><span class="pun">-</span><span class="pln">radius</span><span class="pun">:</span><span class="pln"> </span><span class="lit">50</span><span class="pun">%;</span><span class="pln"> </span><span class="pun">}</span></code></pre>
+
+<p>done. </p>
+
+<p>I made a fiddle as well using your coca cola image here: <a href="http://jsfiddle.net/WEYEp/" rel="nofollow">http://jsfiddle.net/WEYEp/</a></p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-28fe484e-f86a-43f7-8bf8-16c9bcf88cd2">{"heartableId":"comment_16473","href":"/comments/16473/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-28fe484e-f86a-43f7-8bf8-16c9bcf88cd2"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_16476" itemid="16476" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2014-09-03T21:05:02Z" itemprop="datePublished">September 03, 2014 21:05</time></div>
+<div class="hide" itemprop="name">16476</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #6c4d24;">
+<img src="./How to make a circular image with CSS only (Example)_files/coderwall.jpg" alt="Coderwall">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/kamilwysocki" itemprop="alternateName">
+kamilwysocki
+</a>
+</div>
+<div class="content small" itemprop="text"><p><a href="https://coderwall.com/davidsteenkamp">@davidsteenkamp</a> That's cool, thanks for sharing! :)</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-eb45f28c-c404-4452-9430-fa54ebb8f2f0">{"heartableId":"comment_16476","href":"/comments/16476/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-eb45f28c-c404-4452-9430-fa54ebb8f2f0"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+<div class="border-top comment inline-block mb1 py1" id="comment_18763" itemid="18763" itemscope="" itemtype="http://schema.org/Comment" style="width: 100%">
+<div class="hide"><time datetime="2015-03-07T18:00:41Z" itemprop="datePublished">March 07, 2015 18:00</time></div>
+<div class="hide" itemprop="name">18763</div>
+<div class="left mt1 mr2 avatar small" style="background-color: #63ee9a;">
+<img src="./How to make a circular image with CSS only (Example)_files/0_9NypJi3tULjPK64CNKpiJ8_yM_Urt_MCN9e_J8lTQQ73SFmGsturBhL7BDRaAkZmcBYG9F76SrfA.jpeg" alt="0 9nypji3tuljpk64cnkpij8 ym urt mcn9e j8ltqq73sfmgsturbhl7bdraakzmcbyg9f76srfa">
+</div>
+<div class="overflow-hidden py0 mt0">
+<div class="clearfix">
+<div class="author" itemprop="author">
+<a class="bold black no-hover" href="https://coderwall.com/kyongjin%20kim" itemprop="alternateName">
+kyongjin kim
+</a>
+</div>
+<div class="content small" itemprop="text"><p>Thank you so much!! =)</p></div>
+<div class="diminish mt1">
+over 1 year ago
+·
+<script type="application/json" class="js-react-on-rails-component" data-component-name="HeartButton" data-dom-id="HeartButton-react-component-f34c51f2-db4e-4cfa-a651-acfd0bf534dc">{"heartableId":"comment_18763","href":"/comments/18763/likes","labels":["",""]}</script>
+    <div style="display:inline-block" id="HeartButton-react-component-f34c51f2-db4e-4cfa-a651-acfd0bf534dc"><div data-reactroot="" class="inline pointer center purple"><span class="fixed-space-4"><i class="fa fa-heart-o purple h5"></i></span><span class="black ml1"></span></div></div>
+    
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="sm-col sm-col sm-col-12 md-col-4">
+<div class="clearfix sm-ml3 mt3 p1 pb3">
+<h5 class="mt0 mb1">
+<i class="fa fa-folder-o mr1"></i>
+Filed Under
+</h5>
+<hr>
+<div class="topic clearfix py1">
+<a href="https://coderwall.com/t/web/popular">
+<div class="bold">Accelerate Your Web Development Skills</div>
+</a>
+</div>
+</div>
+<script type="application/json" id="js-react-on-rails-context">{"inMailer":false,"i18nLocale":"en","i18nDefaultLocale":"en","href":"https://coderwall.com/p/z87nsq/how-to-make-a-circular-image-with-css-only","location":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","scheme":"https","host":"coderwall.com","port":null,"pathname":"/p/z87nsq/how-to-make-a-circular-image-with-css-only","search":null,"httpAcceptLanguage":"en-US,en;q=0.8","pusherKey":"56c8c9e2d013d4e9f315","user":null,"serverSide":false}</script>
+<script type="application/json" class="js-react-on-rails-component" data-component-name="Sponsors" data-dom-id="Sponsors-react-component-5894eb71-22ba-4da2-a556-8260bea4ec8e">{}</script>
+    <div id="Sponsors-react-component-5894eb71-22ba-4da2-a556-8260bea4ec8e"><div data-reactroot="" class="clearfix sm-ml3 mt3 p1"><h5 class="mt0 mb1"><i class="fa fa-hand-o-right mr1"></i><!-- react-text: 5 -->Sponsors<!-- /react-text --></h5><hr class="mt1"><div class="clearfix py1"><div><a class="link no-hover" href="https://srv.buysellads.com/ads/click/x/GTND4237F6AI5KJUCTALYKQWF6AIE5QYCT7DTZ3JCEAIL53MCYSI62QKC6BDL5Q7CYADEK3EHJNCLSIZ" rel="nofollow noopener noreferrer" target="_blank"><div class="col col-3 md-col-2"><img src="./How to make a circular image with CSS only (Example)_files/57353" class="mt-third" role="presentation"></div><div class="overflow-hidden pl2"><div class="blue bold">Trouble finding an image?</div><div class="font-sm black mt-third"><!-- react-text: 15 -->Get 7 days of FREE downloads on GraphicStock! 350,000+ photos, vectors, and more.<!-- /react-text --><img src="./How to make a circular image with CSS only (Example)_files/11384-6924-111" width="1" height="1" role="presentation" style="display: none;"></div></div></a></div></div><div class="clearfix py1"><div><a class="link no-hover" href="https://srv.buysellads.com/ads/click/x/GTND4237F6AI5KJUCTALYKQWF6AILK3MCWSD4Z3JCEAIL53LCEYIE27KC6BDL5Q7CYADEK3EHJNCLSIZ" rel="nofollow noopener noreferrer" target="_blank"><div class="col col-3 md-col-2"><img src="./How to make a circular image with CSS only (Example)_files/55757" class="mt-third" role="presentation"></div><div class="overflow-hidden pl2"><div class="blue bold">Manual Kinks in your CI/CD Pipeline?</div><div class="font-sm black mt-third"><!-- react-text: 25 -->Is Your DevOps Pipeline Leaking?<!-- /react-text --><img src="./How to make a circular image with CSS only (Example)_files/11384-6651-111" width="1" height="1" role="presentation" style="display: none;"></div></div></a></div></div></div></div>
+    
+
+<div class="clearfix sm-ml3 mt3 p1">
+<div class="clearfix">
+<div class="col col-7">
+<h5 class="mt0">
+<i class="fa fa-diamond mr1"></i>
+Awesome Job
+</h5>
+</div>
+<div class="col col-5">
+<div class="right font-sm bold">
+<a class="block" href="https://coderwall.com/jobs">
+See All Jobs
+<i class="fa fa-arrow-right"></i>
+</a>
+</div>
+</div>
+</div>
+<hr>
+<div class="clearfix py1">
+<a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Nuxeo - 5f7d95c8-270a-43b6-b534-8cd1c58529db" href="https://nuxeo.welcomekit.co/jobs/python-developer_paris" rel="nofollow" target="_blank">
+<div class="col col-3 hide md-col-2">
+
+</div>
+</a><div class="overflow-hidden pl2"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Nuxeo - 5f7d95c8-270a-43b6-b534-8cd1c58529db" href="https://nuxeo.welcomekit.co/jobs/python-developer_paris" rel="nofollow" target="_blank">
+<div class="blue bold">
+Python Developer 
+</div>
+</a><div class="font-sm black"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Nuxeo - 5f7d95c8-270a-43b6-b534-8cd1c58529db" href="https://nuxeo.welcomekit.co/jobs/python-developer_paris" rel="nofollow" target="_blank">
+</a><div class="inline"><a class="link no-hover mt2" ga-event-action="Protip Sidebar - Featured Job" ga-event-category="Jobs" ga-event-label="Nuxeo - 5f7d95c8-270a-43b6-b534-8cd1c58529db" href="https://nuxeo.welcomekit.co/jobs/python-developer_paris" rel="nofollow" target="_blank"></a><a rel="nofollow" target="_blank" ga-event-category="Jobs" ga-event-action="Protip Sidebar - Featured Job" ga-event-label="Nuxeo - 5f7d95c8-270a-43b6-b534-8cd1c58529db" href="https://www.nuxeo.com/">Nuxeo</a></div>
+·
+<div class="inline">Paris </div>
+·
+<div class="inline">Full Time</div>
+</div>
+</div>
+
+</div>
+
+<div class="mt2 font-sm">
+<a class="border--green green bold" href="https://coderwall.com/jobs/new">
+Post a job for only
+$299
+</a>
+</div>
+</div>
+<div class="clearfix ml3 mt4" ga-location="Protip Sidebar">
+<div class="bsap bsap_1305410" id="bsap_1305410" data-serve="CVADVK7E"><!-- no ad -->
+<script type="text/javascript" id="auto_1" class="ignoreme"> if (typeof(BSACallback) !== 'undefined') BSACallback(); </script></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</main>
+<footer class="border-top">
+<nav class="clearfix">
+<div class="col col-4 py1 mt1">
+<a class="btn" href="https://twitter.com/coderwall" target="_blank">
+@coderwall
+<i class="fa fa-twitter fa-1x ml1"></i>
+</a>
+</div>
+<div class="col col-8 py2 mt1">
+<div class="right">
+<a class="inline-block ml1" href="https://github.com/coderwall/coderwall-next" rel="nofollow">
+<i class="fa fa-github-alt"></i>
+</a>
+<a class="inline-block ml1" href="https://coderwall.com/t/hackerdesk/popular">
+<div class="sm-show"><i class="fa fa-gift"></i></div>
+</a>
+<a class="inline-block ml1 mr1" href="mailto:support@coderwall.com">
+Contact
+</a>
+<a class="inline-block mr1" href="https://coderwall.com/privacy_policy">Privacy</a>
+<a class="inline-block mr1" href="https://coderwall.com/tos">Terms</a>
+<p class="inline-block diminish inline mr1">Copyright 2017</p>
+</div>
+</div>
+</nav>
+</footer>
+</div>
+<script type="application/json" data-js-react-on-rails-store="store">{"currentUser":{"item":null},"currentProtip":{"item":{"id":94577,"body":"Ever wondered how to make those fancy circular images without the need to edit them in Photoshop? If you don't know what I'm talking about, see [Scenewave](http://www.scenewave.com/). This is actually fairly simple. For the sake of this example, let's use Coca-Cola logo [from here](http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg).\r\n\r\n# Basic code\r\n\r\nLet's start with basic HTML and CSS for this (I'm assuming you can set up a blank HTML document and link a stylesheet to it).\r\n\r\n    \u003cdiv class=\"img-circular\"\u003e\u003c/div\u003e\r\n\r\nLet's set up a basic style for the class **img-circular**.\r\n\r\n    .img-circular{\r\n     width: 200px;\r\n     height: 200px;\r\n     background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');\r\n     background-size: cover;\r\n     display: block;\r\n    }\r\n\r\nThe only thing, that you might not be familiar with, is the line 5. The **background-size** is a new CSS3 property, which enables to manipulate with the dimensions of the background. You can set it's width and height by entering exact pixel values, percentage, or make the background cover or make it fit whole container. Make sure you see the [background-size documentation](http://www.w3schools.com/cssref/css3_pr_background-size.asp) for more info.\r\n\r\n# Making things rounded\r\n\r\nSo now we have image, that fits our square container. Let's alter the CSS code to make circular frame. We will use [**border-radius** property](http://www.w3schools.com/cssref/css3_pr_border-radius.asp), which gives us opportunity to round the corners of element it's applied to. To make our image circular we have to use values, which are half of the image size values. Our CSS file now looks like this:\r\n\r\n```css\r\n.img-circular{\r\n width: 200px;\r\n height: 200px;\r\n background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');\r\n background-size: cover;\r\n display: block;\r\n border-radius: 100px;\r\n -webkit-border-radius: 100px;\r\n -moz-border-radius: 100px;\r\n}\r\n```\r\n\r\nAnd you're done! New CSS properties allow us to create effects which can save you precious minutes of Photoshopping.\r\n\r\n# Further extensions\r\n\r\nIf you carefully studied links to documentation I gave you (in case you missed it - [check it out](http://www.w3schools.com/cssref/css3_pr_border-radius.asp)), you are perfectly aware, that you can manipulate the image's corners in non-symmetrical way. Try CSS code below. What happened?\r\n\r\n    .img-circular{\r\n     width: 200px;\r\n     height: 200px;\r\n     background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');\r\n     background-size: cover;\r\n     display: block;\r\n     border-top-left-radius: 100px;\r\n     -webkit-border-top-left-radius: 100px;\r\n     -moz-border-top-left-radius: 100px;\r\n     border-bottom-right-radius: 100px;\r\n     -webkit-border-bottom-right-radius: 100px;\r\n     -moz-border-bottom-right-radius: 100px;\r\n    }\r\n\r\nTo see the effects of this tutorial visit [this jsFiddle page](http://jsfiddle.net/WEYEp/).","created_at":"2013-08-29T21:10:41.375Z","heartableId":"protip_94577","hearts":25,"html":"\u003cp\u003eEver wondered how to make those fancy circular images without the need to edit them in Photoshop? If you don't know what I'm talking about, see \u003ca href=\"http://www.scenewave.com/\" rel=\"nofollow\"\u003eScenewave\u003c/a\u003e. This is actually fairly simple. For the sake of this example, let's use Coca-Cola logo \u003ca href=\"http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg\" rel=\"nofollow\"\u003efrom here\u003c/a\u003e.\u003c/p\u003e\n\n\u003ch1\u003eBasic code\u003c/h1\u003e\n\n\u003cp\u003eLet's start with basic HTML and CSS for this (I'm assuming you can set up a blank HTML document and link a stylesheet to it).\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e\u0026lt;div class=\"img-circular\"\u0026gt;\u0026lt;/div\u0026gt;\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eLet's set up a basic style for the class \u003cstrong\u003eimg-circular\u003c/strong\u003e.\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e.img-circular{\n width: 200px;\n height: 200px;\n background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');\n background-size: cover;\n display: block;\n}\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eThe only thing, that you might not be familiar with, is the line 5. The \u003cstrong\u003ebackground-size\u003c/strong\u003e is a new CSS3 property, which enables to manipulate with the dimensions of the background. You can set it's width and height by entering exact pixel values, percentage, or make the background cover or make it fit whole container. Make sure you see the \u003ca href=\"http://www.w3schools.com/cssref/css3_pr_background-size.asp\" rel=\"nofollow\"\u003ebackground-size documentation\u003c/a\u003e for more info.\u003c/p\u003e\n\n\u003ch1\u003eMaking things rounded\u003c/h1\u003e\n\n\u003cp\u003eSo now we have image, that fits our square container. Let's alter the CSS code to make circular frame. We will use \u003ca href=\"http://www.w3schools.com/cssref/css3_pr_border-radius.asp\" rel=\"nofollow\"\u003e\u003cstrong\u003eborder-radius\u003c/strong\u003e property\u003c/a\u003e, which gives us opportunity to round the corners of element it's applied to. To make our image circular we have to use values, which are half of the image size values. Our CSS file now looks like this:\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint lang-css\"\u003e.img-circular{\n width: 200px;\n height: 200px;\n background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');\n background-size: cover;\n display: block;\n border-radius: 100px;\n -webkit-border-radius: 100px;\n -moz-border-radius: 100px;\n}\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eAnd you're done! New CSS properties allow us to create effects which can save you precious minutes of Photoshopping.\u003c/p\u003e\n\n\u003ch1\u003eFurther extensions\u003c/h1\u003e\n\n\u003cp\u003eIf you carefully studied links to documentation I gave you (in case you missed it - \u003ca href=\"http://www.w3schools.com/cssref/css3_pr_border-radius.asp\" rel=\"nofollow\"\u003echeck it out\u003c/a\u003e), you are perfectly aware, that you can manipulate the image's corners in non-symmetrical way. Try CSS code below. What happened?\u003c/p\u003e\n\n\u003cpre\u003e\u003ccode class=\"prettyprint\"\u003e.img-circular{\n width: 200px;\n height: 200px;\n background-image: url('http://strawberry-fest.org/wp-content/uploads/2012/01/Coca-Cola-logo.jpg');\n background-size: cover;\n display: block;\n border-top-left-radius: 100px;\n -webkit-border-top-left-radius: 100px;\n -moz-border-top-left-radius: 100px;\n border-bottom-right-radius: 100px;\n -webkit-border-bottom-right-radius: 100px;\n -moz-border-bottom-right-radius: 100px;\n}\u003c/code\u003e\u003c/pre\u003e\n\n\u003cp\u003eTo see the effects of this tutorial visit \u003ca href=\"http://jsfiddle.net/WEYEp/\" rel=\"nofollow\"\u003ethis jsFiddle page\u003c/a\u003e.\u003c/p\u003e\n","public_id":"z87nsq","subscribed":false,"tags":["css","css3","images","html5","html","round","circle","circular","rounded"],"title":"How to make a circular image with CSS only","upvotes":25}},"comments":{"items":[{"id":11261,"hearts":0,"heartableId":"comment_11261"},{"id":12442,"hearts":0,"heartableId":"comment_12442"},{"id":12445,"hearts":0,"heartableId":"comment_12445"},{"id":12455,"hearts":0,"heartableId":"comment_12455"},{"id":12612,"hearts":0,"heartableId":"comment_12612"},{"id":12630,"hearts":0,"heartableId":"comment_12630"},{"id":12673,"hearts":4,"heartableId":"comment_12673"},{"id":16473,"hearts":0,"heartableId":"comment_16473"},{"id":16476,"hearts":0,"heartableId":"comment_16476"},{"id":18763,"hearts":0,"heartableId":"comment_18763"}]}}</script>
+  <script>
+    // perfectaudience
+    (function () {
+        window._pa = window._pa || {};
+        var pa = document.createElement('script');
+        pa.type = 'text/javascript';
+        pa.async = true;
+        pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/50775e2d30a1d50002000221.js";
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(pa, s);
+    })();    
+  </script>
+
+
+
+</body></html>
